@@ -1393,6 +1393,8 @@
     <h2>お問い合わせ</h2>
     <p class="section-sub">導入前のご相談、ご質問など、お気軽にどうぞ</p>
     <form class="contact" action="https://formspree.io/f/xwvywkpw" method="POST">
+      <!-- Formspree の宛先は 4 サイトで共有しているため、件名でサービスを判別できるようにする。 -->
+      <input type="hidden" name="_subject" value="【ヒトリンク】LP からのお問い合わせ">
       <label for="name">お名前 / 会社名 <span style="color:var(--alizarin)">*</span></label>
       <input type="text" name="name" id="name" required>
 
